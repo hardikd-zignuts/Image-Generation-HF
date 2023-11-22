@@ -16,7 +16,7 @@ export default function Home() {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          Authorization: `Bearer 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`,
+          Authorization: `Bearer ${process.env.NEXT_PUBLIC_TOKEN}`,
         },
         body: JSON.stringify({ inputs: input }),
       }
