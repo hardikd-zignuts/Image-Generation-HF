@@ -11,7 +11,7 @@ export default function Home() {
 
     const input = event.target.elements.input.value;
     const response = await fetch(
-      "https://api-inference.huggingface.co/models/CompVis/stable-diffusion-2",
+      "https://api-inference.huggingface.co/models/stabilityai/stable-diffusion-2-1",
       {
         method: "POST",
         headers: {
